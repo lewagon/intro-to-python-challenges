@@ -1,6 +1,6 @@
 FROM jupyter/base-notebook:notebook-6.0.0
 
-RUN pip jupyter-offlinenotebook
+# RUN pip jupyter-offlinenotebook # mybinder can't find this package any more?
 
 RUN mkdir python_101
 COPY --chown=1000:100 ["./python_101/1. Project - Python Method Zoo.ipynb", "./python_101/"]
