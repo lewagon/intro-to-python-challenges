@@ -1,6 +1,6 @@
 FROM jupyter/base-notebook:notebook-6.0.0
 
-RUN pip install jupyter-offlinenotebook
+RUN pip install jupyter-offlinenotebook pandas matplotlib openpyxl
 
 COPY --chown=1000:100 [".", "."]
 
