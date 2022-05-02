@@ -1,4 +1,4 @@
-FROM jupyter/base-notebook:notebook-6.0.0
+FROM jupyter/base-notebook:notebook-6.4.11
 
 RUN pip install jupyter-offlinenotebook pandas matplotlib openpyxl
 
